@@ -19,7 +19,6 @@ installpack <- function(package_name = NULL) {
   if(isTRUE(package_name %in% .packages(all.available=TRUE))) {
     eval(parse(text = sprintf("require(\"%s\")", package_name)))
   } else {
-    update.packages(ask= FALSE) #update installed packages.
     eval(parse(text = sprintf("install.packages(\"%s\", 
                               dependencies = TRUE)",  package_name)))
   }
