@@ -1,7 +1,7 @@
 Package: crisprseekplus
 Type: Package
 Title: crisprseekplus
-Version: 1.7.0
+Version: 1.7.1
 Date: 2016-07-25
 Author: Sophie Wigmore <Sophie.Wigmore@umassmed.edu>, Alper Kucukural
         <alper.kucukural@umassmed.edu>, Lihua Julie Zhu
@@ -16,7 +16,7 @@ Depends: R (>= 3.3.0), shiny, shinyjs, CRISPRseek
 License: GPL-3 + file LICENSE
 LazyData: true
 Imports: DT, utils, GUIDEseq, GenomicRanges, GenomicFeatures,
-        BiocInstaller, BSgenome, AnnotationDbi, hash
+        BiocManager, BSgenome, AnnotationDbi, hash
 RoxygenNote: 5.0.1
 Suggests: testthat, rmarkdown, knitr, R.rsp
 VignetteBuilder: knitr, R.rsp
