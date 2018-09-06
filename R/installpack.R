@@ -28,7 +28,7 @@ installpack <- function(package_name = NULL) {
     if (!requireNamespace("BiocManager", quietly=TRUE))
         install.packages("BiocManager")
     BiocManager::install(character(), ask=FALSE) #update installed packages.
-    eval(parse(text = sprintf("biocLite(\"%s\")", package_name)))
+    eval(parse(text = sprintf("BiocManager::install(\"%s\")", package_name)))
     eval(parse(text = sprintf("require(\"%s\")", package_name)))
   }
 }
