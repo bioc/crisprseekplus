@@ -34,7 +34,6 @@
 #' @importFrom BSgenome getBSgenome
 #' @importFrom GenomicRanges GRanges
 #' @importFrom GenomicFeatures exons
-#' @importFrom BiocInstaller biocLite
 #' @importFrom AnnotationDbi get
 #' @export
 #' 
